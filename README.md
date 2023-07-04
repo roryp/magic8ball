@@ -1,7 +1,7 @@
 Script
 
-1) jdk
-2) Runtime
+1) install the jdk 21 early release
+2) set the Runtime to the jdk 21 early release
 3) Magic8Ball coding example
-4) Launch
+4) Launch with --enable-preview
 5) Debug
