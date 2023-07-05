@@ -1,13 +1,14 @@
 import java.util.Random;
 
 public class Magic8Ball {
+
     void main(String[] args) throws InterruptedException {
         var answers = new String[] {
-                "It is certain.",
-                "It is decidedly so.",
-                "Without a doubt.",
-                "Yes - definitely.",
-                "You may rely on it."
+                "Yes",
+                "No.",
+                "Maybe",
+                "Drink more coffee.",
+                "Ask ChatGPT"
         };
 
         var random = new Random();
@@ -15,8 +16,8 @@ public class Magic8Ball {
             answers.length)];
 
         Thread.startVirtualThread(() -> 
-        System.out.println("The magic 8 ball "+
-        "says: " + answer))
-                .join();
+            System.out.println("The magic 8 ball "+
+            "says: " + answer))
+        .join();
     }
 }
